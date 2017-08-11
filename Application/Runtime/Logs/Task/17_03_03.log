@@ -1,0 +1,231 @@
+[ 2017-03-03T20:57:39+08:00 ] ::1 /oa/index.php/Task/index/dealed.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `oa_task` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_task` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `oa_task` WHERE `status` = 2 ORDER BY create_time DESC LIMIT 0,15   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0095s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0079s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2017-03-03T20:57:42+08:00 ] ::1 /oa/index.php/Task/index/not_deal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `oa_task` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_task` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_task` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 0,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0045s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0030s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-03-03T20:57:44+08:00 ] ::1 /oa/index.php/Task/index/dealed.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `oa_task` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_task` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_task` WHERE `status` = 2 ORDER BY create_time DESC LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0028s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0023s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-03-03T20:58:29+08:00 ] ::1 /oa/index.php/Task/index/dealed.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `oa_task` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_task` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_task` WHERE `status` = 2 ORDER BY create_time DESC LIMIT 0,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0033s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2017-03-03T20:58:31+08:00 ] ::1 /oa/index.php/Task/index/dealed.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `oa_task` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_task` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `oa_task` WHERE `status` = 2 ORDER BY create_time DESC LIMIT 0,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0024s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0025s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2017-03-03T20:58:42+08:00 ] ::1 /oa/index.php/Task/index/dealed.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `oa_task` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_task` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_task` WHERE `status` = 2 ORDER BY create_time DESC LIMIT 0,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0024s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0023s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-03-03T20:58:48+08:00 ] ::1 /oa/index.php/Task/index/dealed.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `oa_task` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_task` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_task` WHERE `status` = 2 ORDER BY create_time DESC LIMIT 0,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0051s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0023s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+

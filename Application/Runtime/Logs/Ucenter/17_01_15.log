@@ -1,0 +1,135 @@
+[ 2017-01-15T10:52:21+08:00 ] ::1 /oa/index.php/Ucenter/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002512s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002602s ]
+
+[ 2017-01-15T10:52:21+08:00 ] ::1 /oa/index.php/Ucenter/Member/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2017-01-15T10:52:32+08:00 ] ::1 /oa/index.php/Ucenter/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0286s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `oa_user` WHERE `name` = 'admin' AND `password` = '1e5c822c0863e6977fdf94016179af82' LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2017-01-15T11:39:00+08:00 ] ::1 /oa/index.php/Ucenter/staff/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`pname` FROM `oa_department`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0032s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0043s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0032s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `leader` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `leader` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_user_job` [ RunTime:0.0055s ]
+SQL: SELECT `jid` FROM `oa_user_job` WHERE `uid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0038s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `leader` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `leader` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `leader` = 8 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2017-01-15T19:22:32+08:00 ] ::1 /oa/index.php/Ucenter/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001882s ]
+
+[ 2017-01-15T19:22:32+08:00 ] ::1 /oa/index.php/Ucenter/Member/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2017-01-15T19:22:40+08:00 ] ::1 /oa/index.php/Ucenter/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_user` WHERE `name` = 'admin' AND `password` = '1e5c822c0863e6977fdf94016179af82' LIMIT 1   [ RunTime:0.0007s ]
+

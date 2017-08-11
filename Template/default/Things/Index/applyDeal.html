@@ -1,0 +1,111 @@
+
+
+
+<extend name="Common@Base/base" />
+
+<block name="title">
+    <title>信息编辑</title>
+</block>
+<block name="main">
+			<div class="main">
+				<div class="contain">
+					<ol class="breadcrumb">
+					  	<li><a href="your/url/"><i class="icon icon-home"></i> 首页</a></li>
+					  	<li><a href="your/url/"><i class="icon icon-book"></i> 物品管理</a></li>
+					  	<li class="active"> 物品申请</li>
+					</ol>
+					<div class="tool">
+						<div class="col-xs-3 col-sm-2 col-md-1 text-right">
+							<label>物品类型</label>
+						</div>
+						<div class="col-xs-3 col-sm-2 col-md-1">
+							<select class="form-control">
+								<option>类型</option>
+							</select>
+						</div>
+						<div class="col-xs-3 col-sm-2 col-md-1 text-right">
+							<label>物品状态</label>
+						</div>
+						<div class="col-xs-3 col-sm-2 col-md-1">
+							<select class="form-control">
+								<option>状态</option>
+							</select>
+						</div>
+					</div>
+					<table class="table text-center table-striped table-hover">
+						<tr>
+							<th class="text-center">序号</th>
+							<th class="text-center">物品名称</th>
+							<th class="text-center">申请时间</th>
+							<th class="text-center">申请数量</th>
+							<th class="text-center">借用状态</th>
+							<th class="text-center">归回时间</th>
+							<th class="text-center">申请</th>
+						</tr>
+						<volist name="list" id="vo">
+							<tr>
+								<td>{$i}</td>
+								<td>{$vo.tid|get_things_name}</td>
+								<td>{$vo.apply_time}</td>
+								<td>{$vo.number}</td>
+								<td>-</td>
+								<td>-</td>
+								<td><button class="btn btn-info" onclick="check(this,{$vo['id']},{$vo['number']},{$vo['tid']})">批准</button><button class="btn btn-danger" onclick="reject(this,{$vo['id']})">驳回</button></td>
+							</tr>
+						</volist>
+					</table>
+				</div>
+			</div>
+
+</block>
+<block name="js">
+<script type="text/javascript">
+
+	function check(btn,id,number,tid){
+		data = {
+			'id':id,
+			'number':number, //申请数量
+			'tid':tid,  	//物品id
+			'type':1   //1表示批准状态
+		}
+		$.ajax({
+			data:data,
+			url:"{:U(applyDeal)}",
+			type:"post",
+			dataType:"json",
+			success:function(data){
+				if(data.status == 1){
+					$(btn).parent().html('已批准');
+					message_s(data.message);
+				}else{
+					message_e(data.message);
+				}
+			}
+		})
+	}
+	function reject(btn,id){
+		data = {
+			'id':id,
+			'type':2   //2表示驳回
+		}
+		$.ajax({
+			data:data,
+			url:"{:U(applyDeal)}",
+			type:"post",
+			dataType:"json",
+			success:function(data){
+				if(data.status == 1){
+					$(btn).parent().html('已驳回');
+					message_s(data.message);
+				}else{
+					message_e(data.message);
+				}
+			}
+		})
+	}
+	
+	$(document).ready(function(){
+		
+	})
+</script>
+</block>

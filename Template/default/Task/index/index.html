@@ -1,0 +1,182 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+    <title>任务中心</title>
+</block>
+
+<block name="main">
+    <div class="main person">
+        <div class="contain">
+            <ol class="breadcrumb">
+                <li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+                <li><i class="icon icon-checked"></i> 任务中心</li>
+            </ol>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="tool-btns">
+                        <a href="{:U('Index/edit')}" class="boxer boxer-info"><i class="icon icon-edit"></i> 增加</a>
+                        <button class="boxer boxer-info" onclick="finish(1,'')"><i class="icon icon-checked"></i> 完成</button>
+                        <button class="boxer boxer-info" onclick="del(1,'')"><i class="icon icon-remove-circle"></i> 删除</button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" class="check" ></th>
+                                <th>任务</th>
+                                <th>简介</th>
+                                <th>承接部门</th>
+                                <th>开始时间</th>
+                                <th>截至时间</th>
+                                <th>剩余时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <volist name="list" id="vo">
+                                <if condition="$vo['status'] eq 1">
+                                <tr>
+                                    <td><input type="checkbox" name="ids" value="{$vo.id}"></td>
+                                    <td><a href="{:U('Index/detail',array('id'=>$vo['id']))}" class="color-info" target="_blank">{$vo.title}</a></td>
+                                    <td>{$vo.info}</td>
+                                    <td>{$vo.to_depart|getDepartName}</td>
+                                    <td><span class="label label-badge label-info">{$vo.create_time}</span></td>
+                                    <td><span class="label label-badge label-info">{$vo.end_time}</span></td>
+                                    <td><span class="label label-badge label-info"><span class="last">{$vo.end_time|days}</span>天</span></td>
+                                    <td>
+                                        <a href="javascript:;" onclick="finish(2,{$vo['id']})" class="a-icon-info" title="任务完成"><i class="icon icon-check-empty"></i></a>
+                                        <a href="javascript:;" onclick="del(2,{$vo['id']})" class="a-icon-info" title="删除任务"><i class="icon icon-remove-circle"></i></a>
+                                    </td>
+                                </tr>
+                                <else />
+                                <tr class="success">
+                                    <td><input type="checkbox" name="ids" value="{$vo.id}"></td>
+                                    <td><a href="{:U('Index/detail',array('id'=>$vo['id']))}" class="color-info" target="_blank">{$vo.title}</a></td>
+                                    <td>{$vo.info}</td>
+                                    <td>{$vo.to_depart|getDepartName}</td>
+                                    <td><span class="label label-badge label-info">{$vo.create_time}</span></td>
+                                    <td><span class="label label-badge label-info">{$vo.end_time}</span></td>
+                                    <td><span class="label label-badge label-info">已完成</span></td>
+                                    <td>
+                                        <a href="javascript:;" onclick="del(2,{$vo['id']})" class="a-icon-info" title="删除任务"><i class="icon icon-remove-circle"></i></a>
+                                    </td>
+                                </tr>
+                                </if>
+                            </volist>
+                            <tr>
+                                <td colspan="8"><ul class="pager pager-loose pager-pills">{$page}</ul></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> 
+</block>
+<block name="js">
+<script type="text/javascript">
+    $("input.check").click(function(){
+        if($(this).is(':checked')){
+            $('input[name="ids"]').each(function(i){  
+                $(this).prop('checked',true);  
+            });
+        }else{
+            $('input[name="ids"]').each(function(i){  
+                $(this).prop('checked',false);  
+            }); 
+        }
+    });
+
+    $('input[name="ids"]').click(function(){
+         if(!$(this).is(':checked')){
+            $("input.check").prop('checked',false);
+         }
+    });
+
+    $(document).ready(function(){
+        var last = $("table").find(".last");
+        $.each(last,function(){
+            var day = parseInt($(this).text());
+            if(day<1){
+                $(this).parent().parent().parent().addClass("danger");
+                $(this).parent().removeClass("label-info").addClass("label-danger")
+            }
+        })
+    })
+    // 删除任务 多条删除或者单条删除
+    function del(tip,id=''){
+
+        if(tip==1){
+            var id = $("input[name='ids']:checked").map(function(){
+                 return $(this).val();  
+            }).get().join(',');
+            console.log(id.length)
+        }
+
+        if(id.length != 0){
+            if(!confirm("确定要删除任务吗？")){
+                return false;
+            }
+            data = {
+                'id':id
+            }
+        }else{
+            message_e("请选择要删除的任务");
+            return false;
+        }
+
+        $.ajax({
+            data:data,
+            url:"{:U('del')}",
+            type:"post",
+            dataType:"json",
+            success:function(data){
+                // console.log(data.ids);
+                if(data.status==1){
+                    message_s(data.message);
+
+                    // 两秒后刷新当前页面
+                    setTimeout(function(){location.reload()},2000);
+                }else{
+                    message_e(data.message);
+                }
+            }
+        })
+    }
+
+    // 完成任务  多条或者单条均可
+    function finish(tip,id=''){
+
+        if(tip==1){
+            var id = $("input[name='ids']:checked").map(function(){
+                 return $(this).val();  
+            }).get().join(',');
+            console.log(id.length)
+        }
+
+        if(id.length == 0){
+            message_e("请选择要删除的任务");
+            return false;
+        }
+        data = {
+            'id':id
+        }
+        $.ajax({
+            data:data,
+            url:"{:U('finish')}",
+            type:"post",
+            dataType:"json",
+            success:function(data){
+                // console.log(data.ids);
+                if(data.status==1){
+                    message_s(data.message);
+
+                    // 两秒后刷新当前页面
+                    setTimeout(function(){location.reload()},2000);
+                }else{
+                    message_e(data.message);
+                }
+            }
+        })
+    }
+</script>
+</block>

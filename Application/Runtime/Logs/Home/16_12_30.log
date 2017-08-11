@@ -1,0 +1,40 @@
+[ 2016-12-30T17:56:57+08:00 ] ::1 /oa/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012940s ]
+
+[ 2016-12-30T17:56:57+08:00 ] ::1 /oa/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012871s ]
+
+[ 2016-12-30T17:57:48+08:00 ] ::1 /oa/index.php/Home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `oa_note` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `oa_note` WHERE `status` = 1 AND `uid` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_news` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `oa_news` ORDER BY time DESC LIMIT 5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+

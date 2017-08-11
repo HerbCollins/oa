@@ -1,0 +1,343 @@
+[ 2017-03-25T15:42:18+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0036s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2017-03-25T15:45:33+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-03-25T15:53:31+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2017-03-25T16:03:06+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: menu G:\www\oa\Application\Runtime\Cache\Qrcode\cdb977df4afe4c34f026ca49b3de915e.php 第 57 行.
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2017-03-25T16:03:07+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: menu G:\www\oa\Application\Runtime\Cache\Qrcode\cdb977df4afe4c34f026ca49b3de915e.php 第 57 行.
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2017-03-25T16:03:08+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: menu G:\www\oa\Application\Runtime\Cache\Qrcode\cdb977df4afe4c34f026ca49b3de915e.php 第 57 行.
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-03-25T16:03:12+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: menu G:\www\oa\Application\Runtime\Cache\Qrcode\cdb977df4afe4c34f026ca49b3de915e.php 第 57 行.
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2017-03-25T16:03:37+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-03-25T16:03:40+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2017-03-25T16:04:57+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/default/Common/Public/left-nav.html): failed to open stream: No such file or directory G:\www\oa\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-03-25T16:04:58+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/default/Common/Public/left-nav.html): failed to open stream: No such file or directory G:\www\oa\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-03-25T16:04:58+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/default/Common/Public/left-nav.html): failed to open stream: No such file or directory G:\www\oa\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2017-03-25T16:05:39+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2017-03-25T16:05:40+08:00 ] ::1 /oa/index.php/Qrcode/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+

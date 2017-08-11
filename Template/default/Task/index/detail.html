@@ -1,0 +1,51 @@
+<extend name="Common@Base/base" />
+<block name="style">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/zui/lib/datetimepicker/datetimepicker.css">
+	
+</block>
+<block name="main">
+	<div class="main">
+		<div class="contain">
+			<ol class="breadcrumb">
+			  	<li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+			  	<li><a href=""><i class="icon icon-checked"></i> 任务中心</a></li>
+			  	<li class="active"> 任务详情</li>
+			</ol>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="container">
+  					<div class="form-group">
+					    <label for="name">任务需求名称</label>
+					    <div class="input">{$task.title}</div>
+  					</div>
+  					<div class="form-group">
+					    <label for="des">需求描述</label>
+					    <div class="input">{$task.info}</div>
+				  	</div>
+				  	<div class="form-group">
+				  		<div class="col-xs-6">
+						    <label for="start">开始时间：</label>
+						    <div class="input">{$task.create_time}</div>
+				  		</div>
+				  		<div class="col-xs-6">
+						    <label for="end">截至时间</label>
+						    <div class="input">{$task.end_time}</div>
+				  		</div>
+					</div>
+				  	<div class="form-group">
+					    <label for="to_depart">承接部门：</label>
+					    <div class="input">{$task.to_depart}</div>
+					</div>
+				  	<div class="form-group">
+					    <label for="info">详细信息</label>
+					    <!-- 加载编辑器的容器 -->
+                        <div class="contain">
+                        	{$task.contain|stripslashes|htmlspecialchars_decode}
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</block>

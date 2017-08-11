@@ -1,0 +1,102 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+    <title>信息编辑</title>
+</block>
+
+<block name="main">
+    <div class="main person">
+        <div class="contain">
+            <ol class="breadcrumb">
+                <li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+                <li><a href="{:U('index')}"><i class="icon icon-home"></i> 员工管理</a></li>
+                <li><i class="icon icon-group"></i> 分配职位-{$uid|getUserName}</li>
+            </ol>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="container">
+						<form class="form-horizontal" id="staff" action="{:U('')}" method="post">
+						<div class="form-group">
+							<label for="" class="col-sm-2 text-left">姓名</label>
+							<label class="col-md-6 col-sm-10 text-left" style="text-align:left">{$uid|getUserName}</label>
+						
+						</div>
+					  	<div class="form-group">
+							<label for="" class="col-sm-2 text-left">当前部门</label>
+							<label class="col-md-6 col-sm-10 text-left" style="text-align:left">{$uid|getUserDepart}</label>
+						</div>
+					  	<div class="form-group">
+							<label for="" class="col-sm-2 text-left">当前职位</label>
+							<label class="col-md-6 col-sm-10 text-left" style="text-align:left">{$uid|getUserJob}</label>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 text-left">是否为主管</label>
+							<label class="col-md-6 col-sm-10 text-left" style="text-align:left">
+								<input type="radio" name="is_leader" value="1"> 是 
+								<input type="radio" name="is_leader" value="0" checked="checked"> 否
+							</label>
+						</div>
+					  	<div class="form-group jobs">
+						    <label for="StaffPhone" class="col-sm-2">职位</label>
+						    <div class="col-md-6 col-sm-10">
+						      	<select name="jid" class="slt">
+						      		<volist name="job" id="vo">
+						      			<option value="{$vo.id}">{$vo.name}</option>
+						      		</volist>
+						      	</select>
+						    </div>
+						</div>
+						<div class="form-group">
+						    <div class="col-sm-offset-2 col-sm-10">
+						    	<input type="hidden" value="{$uid}" name="id" />
+						    	<input type="hidden" value="{$pid}" name="pid" />
+						      	<button type="submit" class="boxer boxer-info">保存</button>
+						      	<a href="{:U('index')}" class="boxer boxer-info">取消</a>
+						    </div>
+						</div>
+					</form>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</block>
+<block name="js">
+<script type="text/javascript">
+	$("input[name='is_leader']").change(function(){
+		var is_leader = $(this).val();
+		
+		if(is_leader ==1 ){
+			$(".jobs").hide();
+		}else{
+			$(".jobs").show();
+		}
+	})
+	$("form").submit(function(){
+		
+		data = $(this).serialize();
+		$.ajax({
+			data:data,
+			type:"post",
+			url:"{:U('allotJob')}",
+			dataType:"json",
+			success:function(data){
+				if(data.status==1){
+					message_s(data.message);
+					setTimeout(function(){location.href="{:U('index')}"},2000);
+				}else{
+					message_e(data.message);
+				}
+			},
+			error:function(){
+				message_e("链接失败");
+			}
+		})
+		return false;
+	})
+
+</script>
+
+
+</script>
+</block></html>

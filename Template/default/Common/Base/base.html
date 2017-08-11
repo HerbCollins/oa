@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<block name="title"></block>
+	<meta charset="utf-8" />
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/zui/css/zui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/zui/lib/calendar/zui.calendar.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/core.css">
+	<block name="style"></block>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/zui/js/zui.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/zui/lib/calendar/zui.calendar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+</head>
+<body>
+	<div class="body-main">
+		<div class="left-nav">
+			{:W('Common/Menu/menu')}
+		</div>
+		<div class="right-main">
+			<include file="Common@Public/header" />
+			<block name="main"></block>
+			<div class="footer">
+				<p class="pull-left">作者：<a href="" class="tip">樊格</a>、<a href="" class="tip">王庭村</a></p>
+				<p class="pull-right">本网站为华东交通大学信息工程学院计算机科学与技术2013-1班毕业设计课题</p>
+			</div>
+		</div>
+	</div>
+	<block name="js"></block>
+</body>
+</html>

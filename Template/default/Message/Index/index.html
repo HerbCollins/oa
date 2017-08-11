@@ -1,0 +1,66 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+    <title>消息列表</title>
+</block>
+<block name="main">
+    <div class="main person">
+        <div class="contain">
+            <ol class="breadcrumb">
+                <li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+                <li><i class="icon icon-commenting"></i> 消息列表</li>
+            </ol>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="###" data-target="#tab2Content1" data-toggle="tab">接收消息</a></li>
+                        <li><a href="###" data-target="#tab2Content2" data-toggle="tab">发送消息</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="tab2Content1">
+                            <div class="list"> 
+                                <div class="items">
+                                    <volist name="get" id="g">
+                                    <div class="item">
+                                        <div class="item-heading">
+                                            <h4><a href="{:U('detail',array('id'=>$g['id']))}" class="color-info">{$g.title}</a>
+                                                <if condition="$g.is_read eq 0">
+                                                <span class="label label-dot label-danger"></span>
+                                                </if>
+                                            </h4>
+                                        </div>
+                                        <div class="item-footer">
+                                            <span class="label label-badge label-info">来自：{$g.from_uid|getUserName}</span> 
+                                            <span class="label label-badge label-info">时间：{$g.time}</span>
+                                        </div>
+                                    </div>
+                                    </volist> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2Content2">
+                            <div class="list"> 
+                                <div class="items"> 
+                                    <volist name="send" id="s">
+                                        <div class="item">
+                                            <div class="item-heading">
+                                                <h4><a href="{:U('detail',array('id'=>$s['id']))}" class="color-info">{$s.title}</a></h4>
+                                            </div>
+                                            <div class="item-footer">
+                                                <span class="label label-badge label-info">发送给：{$s.to_uid|getUserName}</span> 
+                                                <span class="label label-badge label-info">时间：{$s.time}</span>
+                                            </div> 
+                                        </div>
+                                    </volist> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+</block>
+<block name="js">
+</block>

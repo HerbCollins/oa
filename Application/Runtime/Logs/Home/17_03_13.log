@@ -1,0 +1,28 @@
+[ 2017-03-13T23:45:17+08:00 ] ::1 /oa/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019496s ]
+SQL: SHOW COLUMNS FROM `oa_note` [ RunTime:0.0786s ]
+SQL: SELECT * FROM `oa_note` WHERE `uid` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `oa_news` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `oa_news` ORDER BY time DESC LIMIT 5   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0041s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011459s ]
+

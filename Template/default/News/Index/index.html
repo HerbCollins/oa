@@ -1,0 +1,45 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+    <title>新闻列表</title>
+</block>
+<block name="main">
+    <div class="main person">
+        <div class="contain">
+            <ol class="breadcrumb">
+                <li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+                <li><i class="icon icon-file-word"></i> 新闻列表</li>
+            </ol>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="list">
+                        <header>
+                            <h3><i class="icon-list-ul"></i> 最新动态</h3>
+                        </header>
+                        <div class="items">
+                            <volist name="list" id="vo">
+                            <div class="item">
+                                <div class="item-heading">
+
+                                    <h4><a href="{:U('detail',array('id'=>$vo['id']))}" class="color-info">{$vo.title}</a></h4>
+                                </div>
+                                <div class="item-content">
+                                    <div class="media pull-left"><img src="{$vo['cover']}" alt=""></div>
+                                    <div class="text">{$vo.info}</div>
+                                </div>
+                                <div class="item-footer">
+                                    <span class="label label-badge label-info">来源：{$vo.from}</span>
+                                    <span class="label label-badge label-info">作者：{$vo.author}</span>
+                                    <span class="label label-badge label-info">时间：{$vo.time}</span>
+                                </div>
+                            </div>
+                            </volist>
+                            <ul class="pager pager-loose pager-pills">{$page}</ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</block>
+<block name="js">
+</block>

@@ -1,0 +1,75 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+	<title>发布公告</title>
+</block>
+
+<block name="main">
+	<div class="main index">
+		<div class="contain">
+			<ol class="breadcrumb">
+			  	<li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+			  	<li class="active"> 发布公告</li>
+			</ol>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="container">
+					<form action="{:U()}" method="post">
+	  					<div class="form-group">
+						    <label for="name">公告标题</label>
+						    <input type="text" class="input" id="name" name="title" placeholder="请输入公告标题">
+	  					</div>
+					  	<div class="form-group">
+						    <label for="info">详细信息</label>
+						    <!-- 加载编辑器的容器 -->
+                            <script id="container" style="height:200px" name="content" type="text/plain"></script>
+						</div>
+					  	<div class="form-group text-center">
+	  						<button type="submit" id="edit_announce" class="boxer boxer-info">发布</button>
+	  					</div>
+					<form>
+				</div>
+			</div>
+		</div>
+	</div> 
+</block>
+
+<block name="js">
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="__PUBLIC__/zui/lib/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="__PUBLIC__/zui/lib/ueditor/ueditor.all.js"></script>
+	<script type="text/javascript">
+ 		u = UE.getEditor('container');
+        u.ready(function(){
+          u.setContent('{$info["contain"]|stripslashes|htmlspecialchars_decode}')
+        })
+
+		$("form").submit(function(){
+			data = $(this).serialize();	
+			urls = $(this).attr("action");
+			$.ajax({
+				data:data,
+				type:"post",
+				url:urls,
+				dataType:"json",
+				beforeSend:function(){
+					$("#edit_task").attr("disabled","disabled").addClass("boxer-disabled").html('<i class="icon icon-spin icon-spinner-snake"></i> 发布中...');
+				},
+				success:function(data){
+					if(data.status==1){
+						$("#edit_announce").attr("disabled",false).removeClass("boxer-disabled").html('<i class="icon icon-spin icon-spinner-snake"></i> 发布成功，正在跳转...');
+						message_s(data.message);
+						setTimeout(function(){
+							window.location.href=data.url;
+						},1000)
+					}else{
+						message_e(data.message);
+					}
+				}
+			})
+			return false;
+		})
+	</script>
+</block>

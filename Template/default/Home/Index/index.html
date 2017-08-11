@@ -1,0 +1,170 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+	<title>OA</title>
+</block>
+
+<block name="main">
+	<div class="main index">
+		<div class="contain">
+			<ol class="breadcrumb">
+			  	<li><i class="icon icon-home"></i> 首页</li>
+			</ol>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+					<div class="panel">
+						<div class="panel-heading">
+							工作便签
+						</div>
+						<div class="panel-body">
+							<div class="list">
+							  <!-- 列表项组 -->
+							  <section class="items">
+							  <volist name="note" id="vo">
+							    <div class="item">
+							    	<div class="todo-check pull-left" data-toggle="0">
+                                        <input type="checkbox" value="{$vo.id}" onclick="deal({$vo['id']},this)" id="todo-check_{$vo.id}">
+                                        <label for="todo-check_{$vo.id}"></label>
+                                    </div>
+                                    <if condition="$vo['status'] eq 1">
+                                    	<p class="todo-title" title="{$vo.note}">{$vo.note}</p>
+                                    <else />
+                                    	<p class="todo-title line-through">{$vo.note}</p>
+                                    </if>
+                                    <div class="todo-actionlist pull-right clearfix">
+                                    	<span class="label label-info">{$vo.time}</span>
+                                    	<a href="javascript:;" onclick="del({$vo['id']},this)" class="todo-remove"><i class="icon icon-times"></i></a>
+                            		</div>
+							    </div>
+							    </volist>
+							  </section>
+							  <!-- 列表底部 -->
+							</div>
+						</div>
+						<div class="panel-footer panel-entry">
+						    <form role="form" action="{:U('noteAdd')}" method="post" class="form-inline">
+                                <div class="form-group todo-entry">
+                                    <input type="text" placeholder="输入便签" name="note" class="ipt" style="width: 100%">
+                                </div>
+                                <button class="box pull-right" type="submit"><i class="icon icon-plus"></i></button>
+                            </form>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							待完成任务
+						</div>
+						<div class="panel-body">
+							<ul class="list-group">
+							  	<li class="list-group-item">
+							    	<a href="#">项目</a>
+							  	</li>
+							  	<li class="list-group-item">
+							  		<a href="#">待办</a>
+							  	</li>
+							  	<li class="list-group-item"><a href="#">需求</a></li>
+							  	<li class="list-group-item"><a href="#">任务</a></li>
+							  	<li class="list-group-item"><a href="#">Bug</a></li>
+							  	<li class="list-group-item"><a href="">用例</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+					<!-- news -->
+					<div class="panel">
+						<div class="panel-heading">最新新闻</div>
+						<div class="panel-body">
+							<div class="items">
+								<volist name="list" id="vo">
+								<div class="item">
+								    <div class="item-heading">
+								      	<h4><a href="{:U('News/index/detail',array('id'=>$vo['id']))}" class="color-info">{$vo.title}</a></h4>
+								    </div>
+								    <div class="item-content">
+		                                <div class="media pull-left"><img src="{$vo['cover']}" alt=""></div>
+								      	<div class="text">{$vo.info}</div>
+								    </div>
+								    <div class="item-footer">
+								      	<span class="label label-badge label-info">来自：{$vo.from}</span>
+								      	<span class="label label-badge label-info">作者：{$vo.author}</span>
+								      	<span class="label label-badge label-info">时间：{$vo.time}</span>
+								    </div>
+								</div>
+								</volist>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+</block>
+<block name="js">
+<script type="text/javascript">
+    function deal(id,obj){
+    	data = {
+    		'id':id
+    	};
+    	$.ajax({
+    		url:"{:U('noteFinish')}",
+    		data:data,
+    		type:"post",
+    		dataType:"json",
+    		success:function(data){
+    			if(data.status == 1){
+    				message_s("完成");
+        			$(obj).parent().next().addClass("line-through");
+    			}
+    		}
+    	})
+
+    }
+    $(".form-inline").submit(function(){
+    	var note = $("input[name='note']").val();
+    	if(note == "" || note == null){
+    		return false;
+    	}
+    	data = {
+    		'note':note
+    	}
+    	$.ajax({
+    		url:"{:U('noteAdd')}",
+    		data:data,
+    		type:"post",
+    		dataType:"json",
+    		success:function(data){
+    			if(data.status==1){
+    				message_s(data.message);
+    				var html = '<div class="item">'+
+							    	'<div class="todo-check pull-left" data-toggle="0">'+
+                                        '<input type="checkbox" value="'+data.id+'" id="todo-check_'+data.id+'">'+
+                                        '<label for="todo-check_'+data.id+'"></label>'+
+                                    '</div>'+
+                                    '<p class="todo-title">'+note+'</p>'+
+                                    '<div class="todo-actionlist pull-right clearfix">'+
+                                    	'<a href="javascript:;" onclick="del('+data.id+',this)" class="todo-remove"><i class="icon icon-times"></i></a>'+
+                            		'</div>'+
+							    '</div>';
+					$(".items").append(html);
+    			}
+    		}
+    	})
+    	return false;
+    })
+    function del(id,k){
+    	data = {
+    		'id':id
+    	}
+    	$.ajax({
+    		data:data,
+    		type:"post",
+    		url:"{:U('noteDel')}",
+    		dataType:"json",
+    		success:function(data){
+    			$(k).parent().parent().fadeOut(1000)
+    		}
+    	})
+    }
+</script>
+</block>

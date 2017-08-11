@@ -1,0 +1,667 @@
+[ 2017-05-16T12:42:53+08:00 ] ::1 /oa/index.php/Depart/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `oa_department` WHERE `pid` = 0  [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013835s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2017-05-16T12:42:55+08:00 ] ::1 /oa/index.php/Depart/Job/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [2048] Declaration of Depart\Model\JobModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\JobModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\JobModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\JobModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `oa_job` WHERE `did` = 1  [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010550s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-05-16T12:44:19+08:00 ] ::1 /oa/index.php/Depart/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `oa_department` WHERE `pid` = 0  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011667s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-05-16T12:48:29+08:00 ] ::1 /oa/index.php/Depart/Index/info/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0026s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_department` WHERE `pid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.034366s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2017-05-16T12:49:31+08:00 ] ::1 /oa/index.php/Depart/Index/Users/id/12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0020s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `oa_user_depart` WHERE `pid` = 12 AND `status` = 1  [ RunTime:0.0034s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010627s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001470s ]
+
+[ 2017-05-16T12:49:35+08:00 ] ::1 /oa/index.php/Depart/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `oa_department` WHERE `pid` = 0  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012886s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002960s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2017-05-16T12:49:37+08:00 ] ::1 /oa/index.php/Depart/Index/Users/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0020s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `oa_user_depart` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: id G:\www\oa\Application\Runtime\Cache\Depart\f5c7373ea99072d5df47ab6e806c4d88.php 第 86 行.
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `leader` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `oa_user_job` [ RunTime:0.0055s ]
+SQL: SELECT `jid` FROM `oa_user_job` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0036s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: id G:\www\oa\Application\Runtime\Cache\Depart\f5c7373ea99072d5df47ab6e806c4d88.php 第 91 行.
+NOTIC: [8] Undefined index: id G:\www\oa\Application\Runtime\Cache\Depart\f5c7373ea99072d5df47ab6e806c4d88.php 第 86 行.
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `leader` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `jid` FROM `oa_user_job` WHERE `uid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: id G:\www\oa\Application\Runtime\Cache\Depart\f5c7373ea99072d5df47ab6e806c4d88.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-05-16T12:49:45+08:00 ] ::1 /oa/index.php/Depart/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `oa_department` WHERE `pid` = 0  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010831s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-05-16T12:52:27+08:00 ] ::1 /oa/index.php/Depart/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `oa_department` WHERE `pid` = 0  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-05-16T12:54:44+08:00 ] ::1 /oa/index.php/Depart/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `oa_department` WHERE `pid` = 0  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2017-05-16T12:56:08+08:00 ] ::1 /oa/index.php/Depart/Job/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [2048] Declaration of Depart\Model\JobModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\JobModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\JobModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\JobModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `oa_job` WHERE `did` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0034s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2017-05-16T12:59:35+08:00 ] ::1 /oa/index.php/Depart/Job/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [2048] Declaration of Depart\Model\JobModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\JobModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\JobModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\JobModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_job` WHERE `did` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011646s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0024s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2017-05-16T13:00:52+08:00 ] ::1 /oa/index.php/Depart/Job/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [2048] Declaration of Depart\Model\JobModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\JobModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\JobModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\JobModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `oa_job` WHERE `did` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_job` [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_job` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2017-05-16T18:11:09+08:00 ] ::1 /oa/index.php/Depart/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::delete() should be compatible with Think\Model::delete($options = Array) G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Depart\Model\DepartmentModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') G:\www\oa\Application\Depart\Model\DepartmentModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `oa_department` WHERE `pid` = 0  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 275 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.019738s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+

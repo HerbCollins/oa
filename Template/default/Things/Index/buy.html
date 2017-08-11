@@ -1,0 +1,112 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+    <title>信息编辑</title>
+</block>
+<block name="main">
+			<div class="main">
+				<div class="contain">
+					<ol class="breadcrumb">
+					  	<li><a href="your/url/"><i class="icon icon-home"></i> 首页</a></li>
+					  	<li><a href="your/url/"><i class="icon icon-book"></i> 物品管理</a></li>
+					  	<li class="active"> 物品申请</li>
+					</ol>
+					<div class="container">
+						<form class="form-horizontal" action="{:U()}" method="post">
+						  	<div class="form-group">
+						    	<label class="col-sm-2" for="exampleInputAccount1">物品名称</label>
+						    	<div class="col-md-6 col-sm-10">
+						    		<input type="text" class="input" data-type="request" title="请输入物品名称" name="name" placeholder="请输入物品名称">
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label class="col-sm-2" for="exampleInputPassword1">采购数量</label>
+						    	<div class="col-md-6 col-sm-10">
+						    		<input type="number" class="input" data-type="request" title="请输入物品采购数量" name="count" placeholder="请输入物品采购数量">
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label class="col-sm-2" for="exampleInputPassword1">物品类型</label>
+						    	<div class="col-md-6 col-sm-10">
+						    		<select class="form-control" name="type">
+						    			<option value="1">消耗品</option>
+						    			<option value="2">公共用品</option>
+						    		</select>
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						  		<label class="col-sm-2" for="exampleInputPassword1">采购时间</label>
+						    	<div class="col-md-6 col-sm-10">
+						    		<input type="date" class="input" name="buy_time" placeholder="请输入物品采购数量">
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label class="col-sm-2" for="exampleInputMoney1">花费金额</label>
+							    <div class="col-md-6 col-sm-10">
+								    <div class="input-group">
+								      	<span class="input-group-addon"><i class="icon icon-yen"></i></span>
+								      	<input type="number" data-type="request" title="请输入采购所花费的金额" class="input" name="cost" placeholder="请输入采购所花费的金额">
+								    </div>
+								</div>
+	  						</div>
+	  						<div class="form-group text-center">
+						  		<button type="submit" class="boxer boxer-info">提交</button>
+						  	</div>
+						</form>
+					</div>
+				</div>
+			</div>
+</block>
+<block name="js">
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".input").focus(function(){
+			$(this).removeClass("input-error");
+		})
+		
+		$("form").submit(function(){
+			if(!request_check(this)){
+				return false;
+			}
+			datas = $(this).serialize();
+			submit_url = $(this).attr("action");
+			type = $(this).attr("method");
+			$.ajax({
+				data:datas,
+				url:submit_url,
+				type:type,
+				dataType:"json",
+				success:function(data){
+					alert(data.message);
+					if(data.status==1){
+						window.location.href="{:U('index')}";
+					}
+				}
+			})
+			return false;
+		})
+	})
+
+	function request_check(k){
+		inputs = $(k).find("input");
+		flog=1;
+		$(inputs).each(function(i) {
+			if($(this).data("type") == "request"){
+				if($(this).val() == null || $(this).val() == ""){
+					$(this).addClass("input-error");
+					flog = 0;
+				}
+			}
+		})
+		if(flog==1){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	function tooltip_error(obj){
+
+	}
+</script>
+</block>

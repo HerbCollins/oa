@@ -1,0 +1,28 @@
+<div class="logo-zone">
+	<img src="__PUBLIC__/images/logo.png" alt="">
+</div>
+<nav class="menu left-nav" data-toggle="menu">
+  	<ul class="nav nav-primary">
+  		<volist name="menu" id="m">
+  			<empty name="m['path']">
+  				<li class="nav-parent">
+  					<a href="{:U($m['path'])}">{$m.menu}</a>
+					<ul class="nav">
+		  				<volist name="m['child']" id="v">
+				  			<li><a href="{:U($v['path'])}">{$v.menu}</a></li>
+		  				</volist>
+		  			</ul>
+				</li>
+  			<else />
+				<li>
+					<a href="{:U($m['path'])}">{$m.menu}</a>
+				</li>
+  			</empty>
+  		</volist>
+	    <li class="ucenter">
+	    	<a href="{:U('Ucenter/Member/index')}"><i class="icon icon-user"></i> 个人中心</a>
+	    </li>
+		<a href="{:U('Home/index/sendAnnounce')}" class="boxer boxer-back-full text-center"><i class="icon icon-bullhorn"></i> 发布公告</a>
+		<a href="{:U('Message/index/add')}" class="boxer boxer-back-full text-center"><i class="icon icon-comment"></i> 发送消息</a>
+  	</ul> 
+</nav>

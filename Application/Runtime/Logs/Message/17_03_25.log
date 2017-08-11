@@ -1,0 +1,891 @@
+[ 2017-03-25T15:45:47+08:00 ] ::1 /oa/index.php/Message/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `oa_message` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `oa_message` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `oa_message` WHERE `from_uid` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `oa_message` WHERE `to_uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2017-03-25T15:45:56+08:00 ] ::1 /oa/index.php/Message/Index/detail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `oa_message` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `oa_message` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `oa_message` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2017-03-25T15:46:04+08:00 ] ::1 /oa/index.php/Message/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `oa_message` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `oa_message` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `oa_message` WHERE `from_uid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_message` WHERE `to_uid` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0028s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2017-03-25T17:10:48+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `oa_menu` WHERE ( upid = 0 ) ORDER BY sort ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000847s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-03-25T17:10:53+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_menu` WHERE ( upid = 0 ) ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010638s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2017-03-25T17:12:16+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `oa_menu` WHERE ( upid = 0 ) ORDER BY sort ASC  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.026294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0067s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2017-03-25T17:18:37+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `oa_menu` WHERE ( upid = 0 ) ORDER BY sort ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `oa_menu` WHERE `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012564s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0043s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-03-25T17:27:50+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0118s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0080s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0025s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0080s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0038s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:28:51+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0030s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0026s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0029s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0027s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0027s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:28:52+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0032s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0027s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0027s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0029s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0029s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:29:26+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0022s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0019s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0020s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0025s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0022s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:30:47+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0106s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0056s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0047s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0066s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0042s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:30:57+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0038s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0028s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0023s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0029s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0027s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:30:58+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0025s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0021s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0023s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0022s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0023s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:31:19+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0027s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0020s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0021s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0020s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0022s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:31:20+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0023s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0020s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0021s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0026s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0027s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:33:02+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0029s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0028s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0029s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0028s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0028s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:33:03+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0029s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0027s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0027s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0033s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0027s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:34:08+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0024s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0025s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0024s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0021s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0020s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:34:10+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0025s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0020s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0020s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0025s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0026s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND `upid` = 0 ORDER BY sort ASC' at line 1
+ [ SQL语句 ] : SELECT * FROM `oa_menu` WHERE `id` IN () AND `upid` = 0 ORDER BY sort ASC 
+
+[ 2017-03-25T17:34:20+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0029s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0027s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0031s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0030s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0028s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2017-03-25T17:35:41+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002047s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0023s ]
+
+[ 2017-03-25T17:35:47+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0023s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0019s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0026s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0021s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2017-03-25T17:35:49+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001874s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0024s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0101s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0035s ]
+SQL: SELECT `pname` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0082s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2017-03-25T17:36:01+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0024s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0019s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0039s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-03-25T17:36:11+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0024s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0020s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0058s ]
+SQL: SELECT `id` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0039s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `oa_menu` WHERE `id` IN ('1') AND `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_menu` WHERE `id` IN ('1') AND `upid` > '0'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001923s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2017-03-25T17:36:22+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0030s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0030s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0044s ]
+SQL: SELECT `id` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0047s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `oa_menu` WHERE `id` IN ('1') AND `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_menu` WHERE `id` IN ('1') AND `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032102s ]
+NOTIC: [8] Undefined index: child G:\www\oa\Application\Runtime\Cache\Message\7f9906f0c210c65ed8a40540cefeec3b.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0031s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003935s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2017-03-25T17:36:48+08:00 ] ::1 /oa/index.php/Message/index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` <> '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0068s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) G:\www\oa\Application\Ucenter\Model\UserModel.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0024s ]
+SQL: SELECT `pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0048s ]
+SQL: SELECT `id` FROM `oa_department` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_authority` [ RunTime:0.0028s ]
+SQL: SELECT `menu` FROM `oa_authority` WHERE `depart` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_menu` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `oa_menu` WHERE `id` IN ('1','2') AND `upid` = 0 ORDER BY sort ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `oa_menu` WHERE `id` IN ('1','2') AND `upid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032983s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0052s ]
+SQL: SELECT `name` FROM `oa_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001183s ]
+

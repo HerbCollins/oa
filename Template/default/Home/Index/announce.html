@@ -1,0 +1,84 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+	<title>发布公告</title>
+</block>
+
+<block name="main">
+	<div class="main index">
+		<div class="contain">
+			<ol class="breadcrumb">
+			  	<li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+			  	<li class="active"> 公告</li>
+			</ol>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="container">
+					<div class="items">
+						<volist name="list" id="vo">
+							<div class="item">
+						    	<div class="item-heading">
+						      		<div class="pull-right label label-success">{$vo.create_time}</div>
+						      		<h4><a href="javascript:;" onclick="show_detail({$vo['id']})">{$vo.title}</a></h4>
+						    	</div>
+						  	</div>
+						</volist>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<div class="modal fade" id="detail">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+	        <h4 class="modal-title">标题</h4>
+	      </div>
+	      <div class="modal-body">
+	      		<p class="an-time"></p>
+	        	<div class="an-content"></div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="boxer" data-dismiss="modal">关闭</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</block>
+
+<block name="js">
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="__PUBLIC__/zui/lib/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="__PUBLIC__/zui/lib/ueditor/ueditor.all.js"></script>
+	<script type="text/javascript">
+ 		u = UE.getEditor('container');
+        u.ready(function(){
+          u.setContent('{$info["contain"]|stripslashes|htmlspecialchars_decode}')
+        })
+
+		function show_detail(k){
+			data={
+				'id':k
+			}
+			$.ajax({
+				data:data,
+				url:"{:U('announceDetail')}",
+				type:"post",
+				dataType:"json",
+				success:function(data){
+					if(data.status == 1){
+						$(".modal-title").html(data.info.title);
+						$(".an-time").html("发布时间："+data.info.create_time);
+						$(".an-content").html(data.info.content);
+						$('#detail').modal('show');
+					}else{
+						message_e(data.message);
+					}
+				}
+			})
+		}
+	</script>
+</block>

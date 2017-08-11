@@ -1,0 +1,101 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+	<title>OA</title>
+</block>
+<block name="style">
+	<style type="text/css">
+	</style>
+</block>
+<block name="main">
+	<div class="main person index">
+		<div class="contain">
+			<ol class="breadcrumb">
+			  	<li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+			  	<li><i class="icon icon-sitemap"></i> 权限配置</li>
+			</ol>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<table class="table table-striped text-center">
+						<tr>
+							<td>模块</td>
+							<td>
+								导航名称
+							</td>
+							<td>
+								路径
+							</td>
+						</tr>
+						<volist name="list" id="vo">
+							<tr>
+								<td>{$vo.module}</td>
+								<td><a href="###" onclick="list({$vo['id']})" data-toggle="modal" data-target="#myModal">{$vo.menu}</a></td>
+								<td>{$vo.path}</b></td>
+							</tr>
+						</volist>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal">
+	  	<div class="modal-dialog">
+	  		<div class="modal-header">
+	  			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+	      		<h4 class="modal-title">权限配置</h4>
+	    	</div>
+	    	<div class="modal-content">
+	      		<form action="{:U('save')}" method="post">
+	      			<div id="depart"></div>
+	      			<div class="text-center" style="padding:10px">
+	      				<input type="hidden" name="menu" id="auth_menu" />
+	      				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	      				<button type="submit" class="btn btn-primary">保存</button>
+	      			</div>
+	      		</form>
+	    	</div>
+	  	</div>
+	</div> 
+</block>
+<block name="js">
+<script type="text/javascript">
+
+	function list(id){
+		$('#auth_menu').val(id);
+		data = {
+			'id':id
+		};
+		$.ajax({
+			data:data,
+			url:"{:U('model')}",
+			type:"post",
+			dataType:"json",
+			success:function(data){
+				if(data.status == 1){
+					$('#depart').html(data.list);
+				}
+			}
+		})
+	}
+
+	$('form').submit(function(){
+		var data = $(this).serialize();
+		var action_url = $(this).attr('action');
+		$.ajax({
+			data:data,
+			url:action_url,
+			type:"post",
+			dataType:"json",
+			success:function(data){
+				if(data.status == 1){
+					message_s(data.message);
+					$('#myModal').modal('hide');
+				}else{
+					message_e('权限设置失败');
+				}
+			}
+		})
+		return false;
+	})
+</script>
+</block>

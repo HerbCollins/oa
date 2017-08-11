@@ -1,0 +1,111 @@
+<extend name="Common@Base/base" />
+<block name="style">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/zui/lib/datetimepicker/datetimepicker.css">
+	
+</block>
+<block name="main">
+	<div class="main">
+		<div class="contain">
+			<ol class="breadcrumb">
+			  	<li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+			  	<li><a href="{:U('index/index')}"><i class="icon icon-checked"></i> 任务中心</a></li>
+			  	<li class="active"> 发布任务</li>
+			</ol>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="container">
+					<form action="{:U()}" method="post">
+	  					<div class="form-group">
+						    <label for="name">任务需求名称</label>
+						    <input type="text" class="input" id="name" name="title" placeholder="请输入任务需求名称">
+	  					</div>
+	  					<div class="form-group">
+						    <label for="des">需求描述</label>
+						    <input type="text" class="input" id="des" name="info" placeholder="请输入需求描述">
+					  	</div>
+					  	<div class="form-group">
+					  		<div class="col-xs-6">
+							    <label for="start">开始时间：</label>
+							    <input type="text" class="input form-datetime" id="start" name="create_time" placeholder="开始时间">
+					  		</div>
+					  		<div class="col-xs-6">
+							    <label for="end">截至时间</label>
+							    <input type="text" class="input form-datetime" id="end" name="end_time" placeholder="截至时间">
+					  		</div>
+						</div>
+					  	<div class="form-group">
+						    <label for="to_depart">发送给：</label>
+						    <select class="slt" name="to_depart" id="">
+						    	<volist name="depart" id="vo">
+						    		<option value="{$vo.id}">{$vo.pname}</option>
+						    	</volist>
+						    </select>
+						</div>
+					  	<div class="form-group">
+						    <label for="info">详细信息</label>
+						    <!-- 加载编辑器的容器 -->
+                            <script id="container" style="height:200px" name="contain" type="text/plain"></script>
+						</div>
+					  	<div class="form-group text-center">
+	  						<button type="submit" id="edit_task" class="boxer boxer-info">提交</button>
+	  					</div>
+					<form>
+				</div>
+			</div>
+		</div>
+	</div>
+</block>
+<block name="js">
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="__PUBLIC__/zui/lib/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="__PUBLIC__/zui/lib/ueditor/ueditor.all.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/zui/lib/datetimepicker/datetimepicker.js"></script>
+	<script type="text/javascript">
+		$("input").focus(function(){
+			$(this).removeClass("input-error");
+		});
+ 		u = UE.getEditor('container');
+        u.ready(function(){
+          u.setContent('{$info["contain"]|stripslashes|htmlspecialchars_decode}')
+        })
+        // 选择时间和日期
+        $(".form-datetime").datetimepicker(
+        {
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1,
+            format: "yyyy-mm-dd hh:ii"
+        });
+
+		$("form").submit(function(){
+			data = $(this).serialize();
+			
+			urls = $(this).attr("action");
+			$.ajax({
+				data:data,
+				type:"post",
+				url:urls,
+				dataType:"json",
+				beforeSend:function(){
+					$("#edit_task").attr("disabled","disabled").addClass("boxer-disabled").html('<i class="icon icon-spin icon-spinner-snake"></i> 提交中...');
+				},
+				success:function(data){
+					if(data.status==1){
+						$("#edit_task").attr("disabled",false).removeClass("boxer-disabled").html('<i class="icon icon-spin icon-spinner-snake"></i> 发布成功，正在跳转...');
+						message_s(data.message);
+						window.location.href="{:U('index')}";
+					}else{
+						message_e(data.message);
+					}
+				}
+			})
+			return false;
+		})
+	</script>
+</block>

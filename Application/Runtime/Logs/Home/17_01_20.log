@@ -1,0 +1,8 @@
+[ 2017-01-20T11:06:29+08:00 ] 127.0.0.1 /oa/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.064145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.050214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.050268s ]
+

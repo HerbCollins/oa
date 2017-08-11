@@ -1,0 +1,112 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+    <title>新闻管理</title>
+</block>
+
+<block name="main">
+    <div class="main person">
+        <div class="contain">
+            <ol class="breadcrumb">
+                <li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+                <li><i class="icon icon-file-word"></i> 新闻管理</li>
+            </ol>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="tool-btns">
+                        <a href="{:U('add')}" class="boxer boxer-info"><i class="icon icon-edit"></i> 增加</a>
+                        <button class="boxer boxer-info" onclick="del(1,'')"><i class="icon icon-remove-circle"></i> 删除</button>
+                    </div>
+                    <table class="table datatable">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" class="check" ></th>
+                                <th>新闻标题</th>
+                                <th>作者</th>
+                                <th>时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <volist name="list" id="vo">
+                                <tr>
+                                    <td><input type="checkbox" name="ids" value="{$vo.id}"></td>
+                                    <td><a href="{:U('Index/detail',array('id'=>$vo['id']))}" class="color-info" target="_blank">{$vo.title}</a></td>
+                                    <td>{$vo.author}</td>
+                                    <td><span class="label label-badge label-info">{$vo.time}</span></td>
+                                    <td>
+                                        <a href="{:U('edit',array('id'=>$vo['id']))}" class="a-icon-info"><i class="icon icon-edit"></i></a>
+                                        <a href="javascript:;" onclick="del(2,{$vo['id']})" class="a-icon-info"><i class="icon icon-remove-circle"></i></a>
+                                    </td>
+                                </tr>
+                            </volist>
+                            <tr>
+                                <td colspan="5"><ul class="pager pager-loose pager-pills">{$page}</ul></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> 
+</block>
+<block name="js">
+<script type="text/javascript">
+    $("input.check").click(function(){
+        if($(this).is(':checked')){
+            $('input[name="ids"]').each(function(i){  
+                $(this).prop('checked',true);  
+            });
+        }else{
+            $('input[name="ids"]').each(function(i){  
+                $(this).prop('checked',false);  
+            }); 
+        }
+    });
+
+    $('input[name="ids"]').click(function(){
+         if(!$(this).is(':checked')){
+            $("input.check").prop('checked',false);
+         }
+    });
+
+    // 删除新闻  多条删除或者单条删除
+    function del(tip,id=''){
+        if(tip==1){
+            var id = $("input[name='ids']:checked").map(function(){
+                 return $(this).val();  
+            }).get().join(',');
+            console.log(id.length)
+        }
+        if(id.length != 0){
+            if(!confirm("确定要删除新闻吗？")){
+                return false;
+            }
+            data = {
+                'id':id
+            }
+        }else{
+            message_e("请选择要删除的新闻");
+            return false;
+        }
+        $.ajax({
+            data:data,
+            url:"{:U('del')}",
+            type:"post",
+            dataType:"json",
+            success:function(data){
+                // console.log(data.ids);
+                if(data.status==1){
+                    message_s(data.message);
+
+                    // 两秒后刷新当前页面
+                    setTimeout(function(){location.reload()},2000);
+                }else{
+                    message_e(data.message);
+                }
+            }
+        })
+    }
+
+</script>
+</block>

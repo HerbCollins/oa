@@ -1,0 +1,33 @@
+<div class="header">
+	<nav class="navbar" role="navigation">
+		 <div class="container-fluid">
+		    <!-- 导航头部 -->
+		    <div class="toggle">
+			    <!-- 移动设备上的导航切换按钮 -->
+			    <button type="button" class="left-toggle" data-toggle="collapse" data-target=".navbar-top">
+			        <i class="icon icon-bars"></i>
+			    </button>
+		    </div>
+		    <!-- 导航项目 -->
+		   	<div class="right-nav">
+		   		<li><a href="{:U('Message/Index/index')}" title="消息列表" ><i class="icon icon-chat-line"></i></a></li>
+		   		<li><a href="{:U('Home/Index/announce')}" title="公司公告" ><i class="icon icon-bell"></i></a></li>
+		   		<li class="nav-person">
+		   			<a href="javascript:;" class="top-toggle" data-status="0" data-target="person-zone" >  {$Think.session.uid|getUserName} <i class="icon icon-chevron-down"></i></a>
+		   		</li>
+	      	</div>
+
+	      	<!-- 个人信息 -->
+	      	<div class="top-zone top-person-zone panel panel-info">
+	      		<div class="arrow">
+	      			<i class="icon icon-caret-up"></i>
+	      		</div>
+	      		<ul class="list-group">
+	      			<a href="{:U('Ucenter/Member/index')}" class="list-group-item">个人信息</a>
+	      			<a href="" class="list-group-item">修改密码</a>
+	      			<a href="{:U('Ucenter/Member/logout')}" class="list-group-item">退出</a>
+	      		</ul>
+	      	</div>
+		 </div>
+	</nav>
+</div>

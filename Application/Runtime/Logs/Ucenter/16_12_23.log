@@ -1,0 +1,191 @@
+[ 2016-12-23T07:57:35+08:00 ] ::1 /oa/index.php/Ucenter/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001405s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-12-23T07:57:35+08:00 ] ::1 /oa/index.php/Ucenter/Member/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-12-23T07:57:52+08:00 ] ::1 /oa/index.php/Ucenter/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [2048] Declaration of Ucenter\Model\UserModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\xampp\htdocs\oa\Application\Ucenter\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `oa_user` WHERE `name` = 'admin' AND `password` = '1e5c822c0863e6977fdf94016179af82' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-12-23T08:03:04+08:00 ] ::1 /oa/index.php/Ucenter/staff/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`pname` FROM `oa_department`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2016-12-23T08:03:10+08:00 ] ::1 /oa/index.php/Ucenter/Staff/disable.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: UPDATE `oa_user` SET `status`='2' WHERE `id` IN ('1') [ RunTime:0.0071s ]
+
+[ 2016-12-23T08:03:14+08:00 ] ::1 /oa/index.php/Ucenter/Staff/able.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0026s ]
+SQL: UPDATE `oa_user` SET `status`='1' WHERE `id` IN ('1') [ RunTime:0.0024s ]
+
+[ 2016-12-23T08:03:17+08:00 ] ::1 /oa/index.php/Ucenter/Staff/disable.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: UPDATE `oa_user` SET `status`='2' WHERE `id` IN ('1') [ RunTime:0.0021s ]
+
+[ 2016-12-23T08:03:18+08:00 ] ::1 /oa/index.php/Ucenter/Staff/able.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0025s ]
+SQL: UPDATE `oa_user` SET `status`='1' WHERE `id` IN ('1') [ RunTime:0.0051s ]
+
+[ 2016-12-23T08:03:27+08:00 ] ::1 /oa/index.php/Ucenter/Staff/allot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `oa_user_depart` WHERE `uid` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `pid` <> '' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`oa`.`oa_user_depart`, CONSTRAINT `user_depart_pid` FOREIGN KEY (`pid`) REFERENCES `oa_department` (`id`))
+ [ SQL语句 ] : INSERT INTO `oa_user_depart` (`uid`,`pid`,`status`) VALUES ('1','0','1')
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`oa`.`oa_user_depart`, CONSTRAINT `user_depart_pid` FOREIGN KEY (`pid`) REFERENCES `oa_department` (`id`))
+ [ SQL语句 ] : INSERT INTO `oa_user_depart` (`uid`,`pid`,`status`) VALUES ('1','0','1')
+
+[ 2016-12-23T08:03:27+08:00 ] ::1 /oa/index.php/Ucenter/Staff/allot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `oa_user_depart` WHERE `uid` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `pid` <> '' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`oa`.`oa_user_depart`, CONSTRAINT `user_depart_pid` FOREIGN KEY (`pid`) REFERENCES `oa_department` (`id`))
+ [ SQL语句 ] : INSERT INTO `oa_user_depart` (`uid`,`pid`,`status`) VALUES ('1','0','1')
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`oa`.`oa_user_depart`, CONSTRAINT `user_depart_pid` FOREIGN KEY (`pid`) REFERENCES `oa_department` (`id`))
+ [ SQL语句 ] : INSERT INTO `oa_user_depart` (`uid`,`pid`,`status`) VALUES ('1','0','1')
+
+[ 2016-12-23T08:03:28+08:00 ] ::1 /oa/index.php/Ucenter/Staff/allot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `oa_user_depart` WHERE `uid` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid`,`pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `pid` <> '' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`oa`.`oa_user_depart`, CONSTRAINT `user_depart_pid` FOREIGN KEY (`pid`) REFERENCES `oa_department` (`id`))
+ [ SQL语句 ] : INSERT INTO `oa_user_depart` (`uid`,`pid`,`status`) VALUES ('1','0','1')
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`oa`.`oa_user_depart`, CONSTRAINT `user_depart_pid` FOREIGN KEY (`pid`) REFERENCES `oa_department` (`id`))
+ [ SQL语句 ] : INSERT INTO `oa_user_depart` (`uid`,`pid`,`status`) VALUES ('1','0','1')
+
+[ 2016-12-23T08:03:28+08:00 ] ::1 /oa/index.php/Ucenter/Staff/allot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `oa_user_depart` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `oa_user_depart` WHERE `uid` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid`,`pid` FROM `oa_user_depart` WHERE `uid` = 1 AND `pid` <> '' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`oa`.`oa_user_depart`, CONSTRAINT `user_depart_pid` FOREIGN KEY (`pid`) REFERENCES `oa_department` (`id`))
+ [ SQL语句 ] : INSERT INTO `oa_user_depart` (`uid`,`pid`,`status`) VALUES ('1','0','1')
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`oa`.`oa_user_depart`, CONSTRAINT `user_depart_pid` FOREIGN KEY (`pid`) REFERENCES `oa_department` (`id`))
+ [ SQL语句 ] : INSERT INTO `oa_user_depart` (`uid`,`pid`,`status`) VALUES ('1','0','1')
+
+[ 2016-12-23T08:03:54+08:00 ] ::1 /oa/index.php/Ucenter/staff/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `oa_user`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `oa_department` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pname` FROM `oa_department`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+

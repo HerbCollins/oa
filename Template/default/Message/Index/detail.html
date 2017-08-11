@@ -1,0 +1,46 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+    <title>消息详情</title>
+</block>
+<block name="style">
+  
+</block>
+<block name="main">
+    <div class="main person">
+        <div class="contain">
+            <ol class="breadcrumb">
+                <li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+                <li><a href="{:U('Message/index/index')}"><i class="icon icon-list"></i> 消息列表</a></li>
+                <li>消息详情</li>
+            </ol>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="container">
+                        <article class="article">
+                          <header>
+                            <h1 class="text-center">{$detail.title}</h1>
+                            <dl class="dl-inline">
+                              <dt>来自：</dt>
+                              <dd>{$detail.from_uid|getUserName}</dd>
+                              <dt>发送给：</dt>
+                              <dd>{$detail.to_uid|getUserName}</dd>
+                              <dt>时间：</dt>
+                              <dd>{$detail.time}</dd>
+                            </dl> 
+                          </header>
+                          <section class="content">
+                            {$detail.content|stripslashes|htmlspecialchars_decode}
+                          </section>
+                          <footer>
+                            
+                          </footer>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</block>
+<block name="js">  
+</block>

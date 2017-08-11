@@ -1,0 +1,212 @@
+<extend name="Common@Base/base" />
+
+<block name="title">
+	<title>OA</title>
+</block>
+
+<block name="main">
+	<div class="main person">
+		<div class="contain">
+			<ol class="breadcrumb">
+			  	<li><a href="{:U('Home/index/index')}"><i class="icon icon-home"></i> 首页</a></li>
+			  	<li><i class="icon icon-user"></i> 个人信息</li>
+			</ol>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="panel">
+						<div class="panel-body">
+							<table class="table table-hover ">
+								<tr>
+									<td><b>姓名</b></td>
+									<td>{$info.name}</td>
+								</tr>
+								<tr>
+									<td><b>性别</b></td>
+									<td>{$info.sex}</td>
+								</tr>
+								<tr>
+									<td><b>出生日期</b></td>
+									<td>{$info.birthday}</td>
+								</tr>
+								<tr>
+									<td><b>部门</b></td>
+									<td>{$info.id|getUserDepart}</td>
+								</tr>
+								<tr>
+									<td><b>家庭住址</b></td>
+									<td>{$info.addr}</td>
+								</tr>
+								<tr>
+									<td><b>手机</b></td>
+									<td>{$info.phone}</td>
+								</tr>
+								<tr>
+									<td><b>手机</b></td>
+									<td>{$info.tel}</td>
+								</tr>
+							</table>
+							<button type="button" data-toggle="modal" data-target="#edit" class="boxer boxer-info-full text-center">编辑</a>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-body">
+							<button type="button"  data-toggle="modal" data-target="#changePwd" class="boxer boxer-info-full text-center">修改密码</button>
+							<a href="{:U('logout')}" class="boxer boxer-back-full text-center"><i class="icon icon-off"></i> 退出</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="edit">
+	  <div class="modal-dialog">
+	  	<form action="{:U('edit')}" method="post" id="edit_form" class="form-horizontal">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+		        <h4 class="modal-title">编辑个人信息</h4>
+		      </div>
+		      <div class="modal-body"> 
+					<div class="form-group">
+					    <label for="UserAccount" class="col-sm-2">账号</label>
+					    <div class="col-md-6 col-sm-10">
+					      	<input type="text" class="input" data-type="request" name="name" placeholder="请输入登陆账号" value="{$info['name']}">
+					    </div>
+				  	</div>
+				  	<div class="form-group">
+					    <label for="StaffAddr" class="col-sm-2">性别</label>
+					    <div class="col-md-6 col-sm-10">
+					      	<select name="sex" class="form-control">
+					      		<option value="男">男</option>
+					      		<option value="女">女</option>
+					      	</select>
+					    </div>
+					</div>
+				  	<div class="form-group">
+					    <label for="StaffAddr" class="col-sm-2">生日</label>
+					    <div class="col-md-6 col-sm-10">
+					      	<input type="date" class="input" data-type="request" name="birthday" placeholder="请输入生日" value="{$info['birthday']}" >
+					    </div>
+					</div>
+				  	<div class="form-group">
+					    <label for="StaffPhone" class="col-sm-2">手机</label>
+					    <div class="col-md-6 col-sm-10">
+					      	<input type="text" class="input" data-type="request" name="phone" placeholder="请输入手机号"  value="{$info['phone']}">
+					    </div>
+					</div>
+				  	<div class="form-group">
+					    <label for="StaffTel" class="col-sm-2">电话</label>
+					    <div class="col-md-6 col-sm-10">
+					      	<input type="text" class="input" data-type="request" name="tel"placeholder="请输入办公电话" value="{$info['tel']}">
+					    </div>
+					</div>
+				  	<div class="form-group">
+					    <label for="StaffAddr" class="col-sm-2">地址</label>
+					    <div class="col-md-6 col-sm-10">
+					      	<input type="text" class="input" data-type="request" name="addr" placeholder="请输入家庭住址" value="{$info['addr']}">
+					    </div>
+					</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		        <button type="submit" class="btn btn-primary">保存</button>
+		      </div>
+		    </div>
+	    </form>
+	  </div>
+	</div> 
+
+	<div class="modal fade" id="changePwd">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+	        <h4 class="modal-title">标题</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form class="form-horizontal" id="change_form" action="{:U('changePwd')}" method="post">
+			  	<div class="form-group">
+				    <label for="password" class="col-sm-2">原始密码</label>
+				    <div class="col-md-6 col-sm-10">
+				      	<input type="password" class="input" data-type="request" name="password" id="password" value="" placeholder="请输入原始密码">
+				    </div>
+			  	</div>
+			  	<div class="form-group">
+				    <label for="pwd" class="col-sm-2">新密码</label>
+				    <div class="col-md-6 col-sm-10">
+				      	<input type="password" class="input" data-type="request" name="pwd" id="pwd" value="" placeholder="请输入新密码">
+				    </div>
+				</div>
+			  	<div class="form-group">
+				    <label for="pwd1" class="col-sm-2">确认密码</label>
+				    <div class="col-md-6 col-sm-10">
+				      	<input type="password" class="input" data-type="request" name="pwd1" id="pwd1"  placeholder="请确认密码">
+				    </div>
+				</div>
+				<div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				    	<input type="hidden" value="{$uid}" name="id" />
+				      	<button type="submit" class="boxer boxer-info">保存</button>
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				    </div>
+				</div>
+			</form>
+	      </div> 
+	    </div>
+	  </div>
+	</div> 
+</block>
+<block name="js">
+<script type="text/javascript">
+	$('#edit_form').submit(function(){
+		data = $(this).serialize();
+		$.ajax({
+			data:data,
+			url:"{:U('edit')}",
+			type:"post",
+			dataType:"json",
+			success:function(data){
+				if(data.status==1){
+					message_s(data.message);
+					$("#edit").modal('hide');
+
+				}else{
+					message_e(data.message);
+				}
+			}
+		})
+		return false;
+	})
+
+	$('#change_form').submit(function(){
+		var password = $('input[name="password"]').val();
+		var pwd = $('input[name="pwd"]').val();
+		var pwd1 = $('input[name="pwd1"]').val();
+		if(pwd != pwd1){
+			message_e('两次密码不一致');
+			return false;
+		} 
+		data = {
+			'password':password,
+			'pwd':pwd
+		}
+		$.ajax({
+			data:data,
+			url:"{:U('changePwd')}",
+			type:"post",
+			dataType:"json",
+			success:function(data){
+				console.log(data)
+				if(data.status==1){
+					message_s(data.message);
+					$("#changePwd").modal('hide');
+
+				}else{
+					message_e(data.message);
+				}
+			}
+		})
+		return false;
+	})
+</script>
+</block>
